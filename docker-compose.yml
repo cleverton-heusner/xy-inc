@@ -1,0 +1,12 @@
+version: "2"
+services:
+  postgres:
+    container_name: xyinc
+    restart: always
+    image: postgres:9.6
+    environment:
+      - POSTGRES_USER=xyinc
+      - POSTGRES_PASSWORD=xyinc
+      - POSTGRES_DB=xyinc
+    ports:
+      - '5433:5432'  
